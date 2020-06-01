@@ -1,0 +1,28 @@
+Script started on 2020-06-01 21:28:24+07:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="271" LINES="66"]
+(py369) ]0;qadzifi@qadzifi-alware-17-R3: ~/misc/kuliah/os/os201/UAS[01;32mqadzifi@qadzifi-alware-17-R3[00m:[01;34m~/misc/kuliah/os/os201/UAS[00m$ PS![K1="$ "
+$ echo $GitHubUser
+qadzifi
+$ echo $PSTAMP
+TMP1="$(date +%y%m%d-%H%M%S)"; TMP2="$(echo $TMP1-$GitHubUser-${PWD##*/}|sha1sum|cut -c1-4)"; echo "$TMP1-$TMP2-${PWD##*/}/> ";
+$ eval $PSTAMP
+200601-212847-d235-UAS/> 
+$ PS1="\$(eval \$PSTAMP)"
+200601-212852-dab9-UAS/> date
+Sen 01 Jun 2020 09:28:56  WIB
+200601-212856-2e68-UAS/> gpg --list-keys
+/home/qadzifi/.gnupg/pubring.kbx
+--------------------------------
+pub   rsa3072 2020-06-01 [SC] [expires: 2022-06-01]
+      8A2671BFA9E37EB1E225E3D2C42A007B5C9E2255
+uid           [ultimate] Qadzif Kamil Zahari <qadzifi@gmail.com>
+sub   rsa3072 2020-06-01 [E] [expires: 2022-06-01]
+
+pub   rsa4096 2020-02-13 [SC] [expires: 2021-02-12]
+      B4507B533F7F22840BD8E93ED0F5DBDD67DF6DDE
+uid           [ unknown] Operating Systems (OS) <operatingsystems@vlsm.org>
+sub   rsa4096 2020-02-13 [E] [expires: 2021-02-12]
+
+200601-212903-ce12-UAS/> exit
+exit
+
+Script done on 2020-06-01 21:29:09+07:00 [COMMAND_EXIT_CODE="0"]
