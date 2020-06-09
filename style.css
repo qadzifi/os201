@@ -6,12 +6,31 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+div#urls-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+div#urls-container a {
+  margin-right: 10px;
+}
+
+div.custom-button {
+  display: inline;
+  background-color: #20232a;
+  padding: 10px;
+  color: white;
+}
+
 #header-bar {
   width: 100%;
   height: 10vh;
   background-color: #20232a;
-  padding-left: 10px;
-  padding-right: 10px;
   display: flex;
   align-items: center;
   text-transform: uppercase;
@@ -20,7 +39,7 @@ body {
 #header-bar a {
   color: white;
   text-decoration: none;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 #header-bar a.active-tab {
